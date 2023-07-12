@@ -1,0 +1,661 @@
+:   0: Starting resolution (2023-07-12 11:24:24 +0300)
+:   0: User-requested dependencies: [#<Gem::Resolver::DependencyRequest:0x00007f68f24f8ff0 @dependency=<Gem::Dependency type=:runtime name="error_highlight" requirements="= 0.5.1">, @requester=nil>, #<Gem::Resolver::DependencyRequest:0x00007f68f24f8fa0 @dependency=<Gem::Dependency type=:runtime name="did_you_mean" requirements="= 1.6.3">, @requester=nil>, #<Gem::Resolver::DependencyRequest:0x00007f68f24f8f00 @dependency=<Gem::Dependency type=:runtime name="syntax_suggest" requirements="= 1.0.2">, @requester=nil>, #<Gem::Resolver::DependencyRequest:0x00007f68f24f8ed8 @dependency=<Gem::Dependency type=:runtime name="bundler" requirements="= 2.4.14">, @requester=nil>]
+Resolving dependencies...:   0: Creating possibility state for error_highlight (= 0.5.1) (1 remaining)
+:   1: Attempting to activate [error_highlight-0.5.1]
+:   1: Activated error_highlight at [error_highlight-0.5.1]
+:   1: Requiring nested dependencies ()
+:   1: Creating possibility state for did_you_mean (= 1.6.3) (1 remaining)
+:   2: Attempting to activate [did_you_mean-1.6.3]
+:   2: Activated did_you_mean at [did_you_mean-1.6.3]
+:   2: Requiring nested dependencies ()
+:   2: Creating possibility state for syntax_suggest (= 1.0.2) (1 remaining)
+:   3: Attempting to activate [syntax_suggest-1.0.2]
+:   3: Activated syntax_suggest at [syntax_suggest-1.0.2]
+:   3: Requiring nested dependencies ()
+:   3: Creating possibility state for bundler (= 2.4.14) (1 remaining)
+:   4: Attempting to activate [bundler-2.4.14]
+:   4: Activated bundler at [bundler-2.4.14]
+:   4: Requiring nested dependencies ()
+
+:   0: Finished resolution (4 steps) (Took 0.00312392 seconds) (2023-07-12 11:24:24 +0300)
+:   0: Unactivated: 
+:   0: Activated: error_highlight, did_you_mean, syntax_suggest, bundler
+Fetching source index from https://rubygems.org/
+Resolving dependencies...
+fact: (root dependency)
+derived: Gemfile
+attempting Gemfile 0
+fact: Gemfile depends on rails ~> 7.0.6
+fact: Gemfile depends on sprockets-rails >= 0
+fact: Gemfile depends on sqlite3 ~> 1.4
+fact: Gemfile depends on puma ~> 5.0
+fact: Gemfile depends on importmap-rails >= 0
+fact: Gemfile depends on turbo-rails >= 0
+fact: Gemfile depends on stimulus-rails >= 0
+fact: Gemfile depends on jbuilder >= 0
+fact: Gemfile depends on bootsnap >= 0
+fact: Gemfile depends on debug >= 0
+fact: Gemfile depends on web-console >= 0
+fact: Gemfile depends on capybara >= 0
+fact: Gemfile depends on selenium-webdriver >= 0
+fact: Gemfile depends on webdrivers >= 0
+fact: current Ruby version is = 3.2.2
+fact: current RubyGems version is = 3.4.14
+selected Gemfile 0
+derived: RubyGems = 3.4.14
+derived: Ruby = 3.2.2
+derived: webdrivers >= 0
+derived: selenium-webdriver >= 0
+derived: capybara >= 0
+derived: web-console >= 0
+derived: debug >= 0
+derived: bootsnap >= 0
+derived: jbuilder >= 0
+derived: stimulus-rails >= 0
+derived: turbo-rails >= 0
+derived: importmap-rails >= 0
+derived: puma ~> 5.0
+derived: sqlite3 ~> 1.4
+derived: sprockets-rails >= 0
+derived: rails ~> 7.0.6
+attempting RubyGems 3.4.14
+selected RubyGems 3.4.14
+attempting Ruby 3.2.2
+selected Ruby 3.2.2
+attempting rails 7.0.6
+fact: rails >= 7.0.6 depends on activesupport = 7.0.6
+fact: rails >= 7.0.6 depends on actionpack = 7.0.6
+fact: rails >= 7.0.6 depends on actionview = 7.0.6
+fact: rails >= 7.0.6 depends on activemodel = 7.0.6
+fact: rails >= 7.0.6 depends on activerecord = 7.0.6
+fact: rails >= 7.0.6 depends on actionmailer = 7.0.6
+fact: rails >= 7.0.6 depends on activejob = 7.0.6
+fact: rails >= 7.0.6 depends on actioncable = 7.0.6
+fact: rails >= 7.0.6 depends on activestorage = 7.0.6
+fact: rails >= 7.0.6 depends on actionmailbox = 7.0.6
+fact: rails >= 7.0.6 depends on actiontext = 7.0.6
+fact: rails >= 7.0.6 depends on railties = 7.0.6
+fact: rails >= 6.1.0 depends on bundler >= 1.15.0
+fact: rails >= 7.0.0 depends on Ruby >= 2.7.0
+fact: rails >= 4.0.0 depends on RubyGems >= 1.8.11
+selected rails 7.0.6
+derived: bundler >= 1.15.0
+derived: railties = 7.0.6
+derived: actiontext = 7.0.6
+derived: actionmailbox = 7.0.6
+derived: activestorage = 7.0.6
+derived: actioncable = 7.0.6
+derived: activejob = 7.0.6
+derived: actionmailer = 7.0.6
+derived: activerecord = 7.0.6
+derived: activemodel = 7.0.6
+derived: actionview = 7.0.6
+derived: actionpack = 7.0.6
+derived: activesupport = 7.0.6
+attempting bundler 2.4.14
+fact: every version of bundler depends on Ruby >= 2.6.0
+fact: every version of bundler depends on RubyGems >= 3.0.1
+selected bundler 2.4.14
+attempting railties 7.0.6
+fact: railties >= 7.0.6 depends on activesupport = 7.0.6
+fact: railties >= 7.0.6 depends on actionpack = 7.0.6
+fact: railties >= 6.1.5 depends on rake >= 12.2
+fact: railties >= 6.1.0 depends on thor ~> 1.0
+fact: railties >= 5.0.0 depends on method_source >= 0
+fact: railties >= 7.0.0 depends on zeitwerk ~> 2.5
+fact: railties >= 7.0.0 depends on Ruby >= 2.7.0
+selected railties 7.0.6
+derived: zeitwerk ~> 2.5
+derived: method_source >= 0
+derived: thor ~> 1.0
+derived: rake >= 12.2
+attempting actiontext 7.0.6
+fact: actiontext >= 7.0.6 depends on activesupport = 7.0.6
+fact: actiontext >= 7.0.6 depends on activerecord = 7.0.6
+fact: actiontext >= 7.0.6 depends on activestorage = 7.0.6
+fact: actiontext >= 7.0.6 depends on actionpack = 7.0.6
+fact: every version of actiontext depends on nokogiri >= 1.8.5
+fact: actiontext >= 7.0.0 depends on globalid >= 0.6.0
+fact: actiontext >= 7.0.0 depends on Ruby >= 2.7.0
+selected actiontext 7.0.6
+derived: globalid >= 0.6.0
+derived: nokogiri >= 1.8.5
+attempting actionmailbox 7.0.6
+fact: actionmailbox >= 7.0.6 depends on activesupport = 7.0.6
+fact: actionmailbox >= 7.0.6 depends on activerecord = 7.0.6
+fact: actionmailbox >= 7.0.6 depends on activestorage = 7.0.6
+fact: actionmailbox >= 7.0.6 depends on activejob = 7.0.6
+fact: actionmailbox >= 7.0.6 depends on actionpack = 7.0.6
+fact: actionmailbox >= 6.0.0 depends on mail >= 2.7.1
+fact: actionmailbox >= 7.0.1 depends on net-imap >= 0
+fact: actionmailbox >= 7.0.1 depends on net-pop >= 0
+fact: actionmailbox >= 7.0.1 depends on net-smtp >= 0
+fact: actionmailbox >= 7.0.0 depends on Ruby >= 2.7.0
+selected actionmailbox 7.0.6
+derived: net-smtp >= 0
+derived: net-pop >= 0
+derived: net-imap >= 0
+derived: mail >= 2.7.1
+attempting activestorage 7.0.6
+fact: activestorage >= 7.0.6 depends on activesupport = 7.0.6
+fact: activestorage >= 7.0.6 depends on actionpack = 7.0.6
+fact: activestorage >= 7.0.6 depends on activejob = 7.0.6
+fact: activestorage >= 7.0.6 depends on activerecord = 7.0.6
+fact: activestorage >= 6.1.5 depends on marcel ~> 1.0
+fact: activestorage >= 6.1.4 depends on mini_mime >= 1.1.0
+fact: activestorage >= 7.0.0 depends on Ruby >= 2.7.0
+selected activestorage 7.0.6
+derived: mini_mime >= 1.1.0
+derived: marcel ~> 1.0
+attempting actioncable 7.0.6
+fact: actioncable >= 7.0.6 depends on activesupport = 7.0.6
+fact: actioncable >= 7.0.6 depends on actionpack = 7.0.6
+fact: actioncable >= 5.1.0 depends on nio4r ~> 2.0
+fact: actioncable >= 5.2.0 depends on websocket-driver >= 0.6.1
+fact: actioncable >= 7.0.0 depends on Ruby >= 2.7.0
+selected actioncable 7.0.6
+derived: websocket-driver >= 0.6.1
+derived: nio4r ~> 2.0
+attempting activejob 7.0.6
+fact: activejob >= 7.0.6 depends on activesupport = 7.0.6
+fact: activejob >= 5.0.0 depends on globalid >= 0.3.6
+fact: activejob >= 7.0.0 depends on Ruby >= 2.7.0
+selected activejob 7.0.6
+attempting actionmailer 7.0.6
+fact: actionmailer >= 7.0.6 depends on activesupport = 7.0.6
+fact: actionmailer >= 7.0.6 depends on actionpack = 7.0.6
+fact: actionmailer >= 7.0.6 depends on actionview = 7.0.6
+fact: actionmailer >= 7.0.6 depends on activejob = 7.0.6
+fact: actionmailer >= 4.1.6 depends on mail >= 2.5.4, < 3.A
+fact: actionmailer >= 7.0.1 depends on net-imap >= 0
+fact: actionmailer >= 7.0.1 depends on net-pop >= 0
+fact: actionmailer >= 7.0.1 depends on net-smtp >= 0
+fact: actionmailer >= 5.0.0 depends on rails-dom-testing ~> 2.0
+fact: actionmailer >= 7.0.0 depends on Ruby >= 2.7.0
+selected actionmailer 7.0.6
+derived: rails-dom-testing ~> 2.0
+derived: mail >= 2.5.4, < 3.A
+attempting activerecord 7.0.6
+fact: activerecord >= 7.0.6 depends on activesupport = 7.0.6
+fact: activerecord >= 7.0.6 depends on activemodel = 7.0.6
+fact: activerecord >= 7.0.0 depends on Ruby >= 2.7.0
+selected activerecord 7.0.6
+attempting activemodel 7.0.6
+fact: activemodel >= 7.0.6 depends on activesupport = 7.0.6
+fact: activemodel >= 7.0.0 depends on Ruby >= 2.7.0
+selected activemodel 7.0.6
+attempting actionview 7.0.6
+fact: actionview >= 7.0.6 depends on activesupport = 7.0.6
+fact: every version of actionview depends on builder ~> 3.1
+fact: actionview >= 5.1.0 depends on erubi ~> 1.4
+fact: actionview >= 6.0.0 depends on rails-html-sanitizer >= 1.2.0, < 2.A
+fact: actionview >= 5.0.0 depends on rails-dom-testing ~> 2.0
+fact: actionview >= 7.0.0 depends on Ruby >= 2.7.0
+selected actionview 7.0.6
+derived: rails-html-sanitizer >= 1.2.0, < 2.A
+derived: erubi ~> 1.4
+derived: builder ~> 3.1
+attempting actionpack 7.0.6
+fact: actionpack >= 7.0.6 depends on activesupport = 7.0.6
+fact: actionpack >= 7.0.5 depends on rack >= 2.2.4, < 3.A
+fact: actionpack >= 5.1.4 depends on rack-test >= 0.6.3
+fact: actionpack >= 6.0.0 depends on rails-html-sanitizer >= 1.2.0, < 2.A
+fact: actionpack >= 5.0.0 depends on rails-dom-testing ~> 2.0
+fact: actionpack >= 7.0.6 depends on actionview = 7.0.6
+fact: actionpack >= 7.0.0 depends on Ruby >= 2.7.0
+selected actionpack 7.0.6
+derived: rack-test >= 0.6.3
+derived: rack >= 2.2.4, < 3.A
+attempting activesupport 7.0.6
+fact: activesupport >= 6.1.0 depends on i18n >= 1.6, < 2
+fact: activesupport >= 6.1.0 depends on tzinfo ~> 2.0
+fact: activesupport >= 5.0.0 depends on concurrent-ruby >= 1.0.2, < 2.A
+fact: activesupport >= 6.1.0 depends on minitest >= 5.1
+fact: activesupport >= 7.0.0 depends on Ruby >= 2.7.0
+selected activesupport 7.0.6
+derived: minitest >= 5.1
+derived: concurrent-ruby >= 1.0.2, < 2.A
+derived: tzinfo ~> 2.0
+derived: i18n >= 1.6, < 2
+attempting webdrivers 5.2.0
+fact: every version of webdrivers depends on nokogiri ~> 1.6
+fact: webdrivers >= 4.1.3 depends on rubyzip >= 1.3.0
+fact: webdrivers >= 5.0.0 depends on selenium-webdriver ~> 4.0
+fact: webdrivers >= 4.7.0 depends on Ruby >= 2.6.0
+selected webdrivers 5.2.0
+derived: selenium-webdriver ~> 4.0
+derived: rubyzip >= 1.3.0
+derived: nokogiri ~> 1.6
+attempting selenium-webdriver 4.10.0
+fact: selenium-webdriver >= 4.0.0 depends on rexml >= 3.2.5, < 4.A
+fact: selenium-webdriver >= 4.2.0 depends on rubyzip >= 1.2.2, < 3.0
+fact: selenium-webdriver >= 4.2.0 depends on websocket ~> 1.0
+fact: selenium-webdriver >= 4.9.1 depends on Ruby >= 3.0
+fact: selenium-webdriver >= 2.43.0 depends on RubyGems > 1.3.1
+selected selenium-webdriver 4.10.0
+derived: websocket ~> 1.0
+derived: rubyzip >= 1.2.2, < 3.0
+derived: rexml >= 3.2.5, < 4.A
+attempting rexml 3.2.5
+selected rexml 3.2.5
+attempting capybara 3.39.2
+fact: capybara >= 2.6.0 depends on addressable >= 0
+fact: capybara >= 3.36.0 depends on matrix >= 0
+fact: capybara >= 2.15.0 depends on mini_mime >= 0.1.3
+fact: capybara >= 3.0.0 depends on nokogiri ~> 1.8
+fact: capybara >= 3.0.0 depends on rack >= 1.6.0
+fact: capybara >= 3.0.0 depends on rack-test >= 0.6.3
+fact: capybara >= 3.35.0 depends on regexp_parser >= 1.5, < 3.0
+fact: capybara >= 3.10.0 depends on xpath ~> 3.2
+fact: capybara >= 3.37.0 depends on Ruby >= 2.7.0
+selected capybara 3.39.2
+derived: xpath ~> 3.2
+derived: regexp_parser >= 1.5, < 3.0
+derived: matrix >= 0
+derived: addressable >= 0
+attempting xpath 3.2.0
+fact: xpath >= 3.0.0 depends on nokogiri ~> 1.8
+fact: xpath >= 3.2.0 depends on Ruby >= 2.3
+selected xpath 3.2.0
+attempting web-console 4.2.0
+fact: web-console >= 4.0.1 depends on railties >= 6.0.0
+fact: web-console >= 4.0.1 depends on activemodel >= 6.0.0
+fact: web-console >= 4.0.1 depends on actionview >= 6.0.0
+fact: web-console >= 3.5.0 depends on bindex >= 0.4.0
+fact: web-console >= 4.0.0 depends on Ruby >= 2.5
+selected web-console 4.2.0
+derived: bindex >= 0.4.0
+attempting debug 1.8.0
+fact: debug >= 1.7.0 depends on irb >= 1.5.0
+fact: debug >= 1.6.0 depends on reline >= 0.3.1
+fact: debug >= 1.0.0 depends on Ruby >= 2.6.0
+selected debug 1.8.0
+derived: reline >= 0.3.1
+derived: irb >= 1.5.0
+attempting bootsnap 1.16.0
+fact: bootsnap >= 1.10.0 depends on msgpack ~> 1.2
+fact: bootsnap >= 1.14.0 depends on Ruby >= 2.6.0
+selected bootsnap 1.16.0
+derived: msgpack ~> 1.2
+attempting jbuilder 2.11.5
+fact: jbuilder >= 2.10.0 depends on activesupport >= 5.0.0
+fact: jbuilder >= 2.11.5 depends on actionview >= 5.0.0
+fact: jbuilder >= 2.10.0 depends on Ruby >= 2.2.2
+selected jbuilder 2.11.5
+attempting stimulus-rails 1.2.1
+fact: stimulus-rails >= 1.0.0 depends on railties >= 6.0.0
+selected stimulus-rails 1.2.1
+attempting turbo-rails 1.4.0
+fact: turbo-rails >= 1.1.0 depends on activejob >= 6.0.0
+fact: turbo-rails >= 0.9.1 depends on actionpack >= 6.0.0
+fact: turbo-rails >= 0.9.1 depends on railties >= 6.0.0
+fact: turbo-rails >= 0.5.2 depends on Ruby >= 2.6.0
+selected turbo-rails 1.4.0
+attempting importmap-rails 1.2.1
+fact: importmap-rails >= 0.9.5 depends on railties >= 6.0.0
+fact: importmap-rails >= 0.9.5 depends on actionpack >= 6.0.0
+fact: importmap-rails >= 0.8.0 depends on Ruby >= 2.7.0
+selected importmap-rails 1.2.1
+attempting sqlite3 1.6.3
+fact: sqlite3 >= 1.6.3 depends on Ruby >= 2.7, < 3.3.dev
+selected sqlite3 1.6.3
+attempting sprockets-rails 3.4.2
+fact: sprockets-rails >= 3.0.0 depends on sprockets >= 3.0.0
+fact: sprockets-rails >= 3.3.0 depends on actionpack >= 5.2
+fact: sprockets-rails >= 3.3.0 depends on activesupport >= 5.2
+fact: sprockets-rails >= 3.3.0 depends on Ruby >= 2.5
+selected sprockets-rails 3.4.2
+derived: sprockets >= 3.0.0
+attempting zeitwerk 2.6.8
+fact: zeitwerk >= 2.5.0 depends on Ruby >= 2.5
+selected zeitwerk 2.6.8
+attempting method_source 1.0.0
+selected method_source 1.0.0
+attempting thor 1.2.2
+fact: thor >= 1.0.0 depends on Ruby >= 2.0.0
+fact: thor >= 0.19.0 depends on RubyGems >= 1.3.5
+selected thor 1.2.2
+attempting rake 13.0.6
+fact: rake >= 13.0.0 depends on Ruby >= 2.2
+selected rake 13.0.6
+attempting globalid 1.1.0
+fact: globalid >= 0.5.1 depends on activesupport >= 5.0
+fact: globalid >= 0.5.2 depends on Ruby >= 2.5.0
+selected globalid 1.1.0
+attempting nokogiri 1.15.3
+fact: nokogiri >= 1.11.0 depends on racc ~> 1.4
+fact: nokogiri >= 1.15.3 depends on Ruby >= 2.7, < 3.3.dev
+selected nokogiri 1.15.3
+derived: racc ~> 1.4
+attempting net-smtp 0.3.3
+fact: net-smtp >= 0.2.1 depends on net-protocol >= 0
+fact: net-smtp >= 0.3.1 depends on Ruby >= 2.6.0
+selected net-smtp 0.3.3
+derived: net-protocol >= 0
+attempting net-pop 0.1.2
+fact: net-pop >= 0.1.1 depends on net-protocol >= 0
+selected net-pop 0.1.2
+attempting net-imap 0.3.6
+fact: net-imap >= 0.1.1 depends on net-protocol >= 0
+fact: net-imap >= 0.3.2 depends on date >= 0
+fact: net-imap >= 0.2.3 depends on Ruby >= 2.6.0
+selected net-imap 0.3.6
+derived: date >= 0
+attempting mail 2.8.1
+fact: mail >= 2.7.0 depends on mini_mime >= 0.1.1
+fact: mail >= 2.8.0 depends on net-smtp >= 0
+fact: mail >= 2.8.0 depends on net-imap >= 0
+fact: mail >= 2.8.0 depends on net-pop >= 0
+fact: mail >= 2.8.0 depends on Ruby >= 2.5
+selected mail 2.8.1
+attempting mini_mime 1.1.2
+selected mini_mime 1.1.2
+attempting marcel 1.0.2
+fact: marcel >= 0.3.1 depends on Ruby >= 2.2
+selected marcel 1.0.2
+attempting websocket-driver 0.7.5
+fact: websocket-driver >= 0.5.0 depends on websocket-extensions >= 0.1.0
+selected websocket-driver 0.7.5
+derived: websocket-extensions >= 0.1.0
+attempting nio4r 2.5.9
+fact: nio4r >= 2.5.3 depends on Ruby >= 2.4
+selected nio4r 2.5.9
+attempting rails-dom-testing 2.1.1
+fact: rails-dom-testing >= 2.0.3 depends on nokogiri >= 1.6
+fact: rails-dom-testing >= 2.1.0 depends on activesupport >= 5.0.0
+fact: rails-dom-testing >= 2.1.1 depends on minitest >= 0
+selected rails-dom-testing 2.1.1
+attempting rails-html-sanitizer 1.6.0
+fact: rails-html-sanitizer >= 1.6.0 depends on loofah ~> 2.21
+fact: rails-html-sanitizer >= 1.6.0 depends on nokogiri ~> 1.14
+fact: rails-html-sanitizer >= 1.6.0 depends on Ruby >= 2.7.0
+selected rails-html-sanitizer 1.6.0
+derived: loofah ~> 2.21
+attempting erubi 1.12.0
+selected erubi 1.12.0
+attempting builder 3.2.4
+selected builder 3.2.4
+attempting rack-test 2.1.0
+fact: rack-test >= 2.0.0 depends on rack >= 1.3
+fact: rack-test >= 2.0.0 depends on Ruby >= 2.0
+selected rack-test 2.1.0
+attempting minitest 5.18.1
+fact: minitest >= 5.16.0 depends on Ruby >= 2.6, < 4.0
+selected minitest 5.18.1
+attempting concurrent-ruby 1.2.2
+fact: concurrent-ruby >= 1.2.0 depends on Ruby >= 2.3
+selected concurrent-ruby 1.2.2
+attempting tzinfo 2.0.6
+fact: tzinfo >= 2.0.0 depends on concurrent-ruby ~> 1.0
+fact: tzinfo >= 2.0.0 depends on Ruby >= 1.9.3
+selected tzinfo 2.0.6
+attempting i18n 1.14.1
+fact: i18n >= 0.9.0 depends on concurrent-ruby ~> 1.0
+fact: i18n >= 1.5.2 depends on Ruby >= 2.3.0
+fact: i18n >= 0.4.2 depends on RubyGems >= 1.3.5
+selected i18n 1.14.1
+attempting rubyzip 2.3.2
+fact: rubyzip >= 2.0.0 depends on Ruby >= 2.4
+selected rubyzip 2.3.2
+attempting websocket 1.2.9
+fact: websocket >= 1.2.8 depends on Ruby >= 2.0
+selected websocket 1.2.9
+attempting regexp_parser 2.8.1
+fact: regexp_parser >= 1.8.1 depends on Ruby >= 2.0.0
+selected regexp_parser 2.8.1
+attempting matrix 0.4.2
+fact: matrix >= 0.3.0 depends on Ruby >= 2.5.0
+selected matrix 0.4.2
+attempting addressable 2.8.4
+fact: addressable >= 2.8.1 depends on public_suffix >= 2.0.2, < 6.0
+fact: addressable >= 2.8.1 depends on Ruby >= 2.2
+selected addressable 2.8.4
+derived: public_suffix >= 2.0.2, < 6.0
+attempting bindex 0.8.1
+fact: bindex >= 0.3.0 depends on Ruby >= 2.0.0
+selected bindex 0.8.1
+attempting reline 0.3.6
+fact: reline >= 0.1.0 depends on io-console ~> 0.5
+fact: reline >= 0.3.2 depends on Ruby >= 2.6
+selected reline 0.3.6
+derived: io-console ~> 0.5
+attempting irb 1.7.2
+fact: irb >= 1.7.2 depends on reline >= 0.3.6
+fact: irb >= 1.6.4 depends on Ruby >= 2.7
+selected irb 1.7.2
+attempting msgpack 1.7.1
+fact: msgpack >= 1.7.0 depends on Ruby >= 2.5
+selected msgpack 1.7.1
+attempting sprockets 4.2.0
+fact: sprockets >= 4.2.0 depends on rack >= 2.2.4, < 4
+fact: sprockets >= 3.5.0 depends on concurrent-ruby ~> 1.0
+fact: sprockets >= 4.0.0 depends on Ruby >= 2.5.0
+selected sprockets 4.2.0
+attempting racc 1.7.1
+fact: racc >= 1.6.0 depends on Ruby >= 2.5
+selected racc 1.7.1
+attempting net-protocol 0.2.1
+fact: net-protocol >= 0.1.1 depends on timeout >= 0
+fact: net-protocol >= 0.1.3 depends on Ruby >= 2.6.0
+selected net-protocol 0.2.1
+derived: timeout >= 0
+attempting date 3.3.3
+fact: date >= 3.3.2 depends on Ruby >= 2.6.0
+selected date 3.3.3
+attempting websocket-extensions 0.1.5
+selected websocket-extensions 0.1.5
+attempting loofah 2.21.3
+fact: loofah >= 2.1.0 depends on crass ~> 1.0.2
+fact: loofah >= 2.21.2 depends on nokogiri >= 1.12.0
+fact: loofah >= 2.21.2 depends on Ruby >= 2.5.0
+selected loofah 2.21.3
+derived: crass ~> 1.0.2
+attempting public_suffix 5.0.3
+fact: public_suffix >= 5.0.0 depends on Ruby >= 2.6
+selected public_suffix 5.0.3
+attempting io-console 0.6.0
+fact: io-console >= 0.5.11 depends on Ruby >= 2.6.0
+selected io-console 0.6.0
+attempting timeout 0.4.0
+selected timeout 0.4.0
+attempting crass 1.0.6
+fact: every version of crass depends on Ruby >= 1.9.2
+selected crass 1.0.6
+attempting puma 5.6.6
+fact: puma >= 4.0.0 depends on nio4r ~> 2.0
+fact: puma >= 3.12.0, < 6.0.0 depends on Ruby >= 2.2
+selected puma 5.6.6
+attempting rack 2.2.7
+fact: rack >= 2.2.0, < 3.0.0 depends on Ruby >= 2.3.0
+selected rack 2.2.7
+Solution found after 1 attempts:
+* RubyGems 3.4.14
+* Ruby 3.2.2
+* rails 7.0.6
+* bundler 2.4.14
+* railties 7.0.6
+* actiontext 7.0.6
+* actionmailbox 7.0.6
+* activestorage 7.0.6
+* actioncable 7.0.6
+* activejob 7.0.6
+* actionmailer 7.0.6
+* activerecord 7.0.6
+* activemodel 7.0.6
+* actionview 7.0.6
+* actionpack 7.0.6
+* activesupport 7.0.6
+* webdrivers 5.2.0
+* selenium-webdriver 4.10.0
+* rexml 3.2.5
+* capybara 3.39.2
+* xpath 3.2.0
+* web-console 4.2.0
+* debug 1.8.0
+* bootsnap 1.16.0
+* jbuilder 2.11.5
+* stimulus-rails 1.2.1
+* turbo-rails 1.4.0
+* importmap-rails 1.2.1
+* sqlite3 1.6.3
+* sprockets-rails 3.4.2
+* zeitwerk 2.6.8
+* method_source 1.0.0
+* thor 1.2.2
+* rake 13.0.6
+* globalid 1.1.0
+* nokogiri 1.15.3
+* net-smtp 0.3.3
+* net-pop 0.1.2
+* net-imap 0.3.6
+* mail 2.8.1
+* mini_mime 1.1.2
+* marcel 1.0.2
+* websocket-driver 0.7.5
+* nio4r 2.5.9
+* rails-dom-testing 2.1.1
+* rails-html-sanitizer 1.6.0
+* erubi 1.12.0
+* builder 3.2.4
+* rack-test 2.1.0
+* minitest 5.18.1
+* concurrent-ruby 1.2.2
+* tzinfo 2.0.6
+* i18n 1.14.1
+* rubyzip 2.3.2
+* websocket 1.2.9
+* regexp_parser 2.8.1
+* matrix 0.4.2
+* addressable 2.8.4
+* bindex 0.8.1
+* reline 0.3.6
+* irb 1.7.2
+* msgpack 1.7.1
+* sprockets 4.2.0
+* racc 1.7.1
+* net-protocol 0.2.1
+* date 3.3.3
+* websocket-extensions 0.1.5
+* loofah 2.21.3
+* public_suffix 5.0.3
+* io-console 0.6.0
+* timeout 0.4.0
+* crass 1.0.6
+* puma 5.6.6
+* rack 2.2.7
+Using rake 13.0.6
+Using concurrent-ruby 1.2.2
+Using builder 3.2.4
+Using erubi 1.12.0
+Using racc 1.7.1
+Using crass 1.0.6
+Using rack 2.2.7
+Using nio4r 2.5.9
+Using websocket-extensions 0.1.5
+Using marcel 1.0.2
+Using mini_mime 1.1.2
+Using date 3.3.3
+Fetching timeout 0.4.0
+Fetching public_suffix 5.0.3
+Fetching msgpack 1.7.1
+Using bundler 2.4.14
+Using matrix 0.4.2
+Using regexp_parser 2.8.1
+Using io-console 0.6.0
+Using method_source 1.0.0
+Using thor 1.2.2
+Using zeitwerk 2.6.8
+Using rexml 3.2.5
+Fetching rubyzip 2.3.2
+Fetching websocket 1.2.9
+Fetching sqlite3 1.6.3 (x86_64-linux)
+Using minitest 5.18.1
+Fetching bindex 0.8.1
+Using i18n 1.14.1
+Using tzinfo 2.0.6
+Using nokogiri 1.15.3 (x86_64-linux)
+Using rack-test 2.1.0
+Using websocket-driver 0.7.5
+Fetching reline 0.3.6
+Installing timeout 0.4.0
+Fetching puma 5.6.6
+Installing websocket 1.2.9
+Fetching sprockets 4.2.0
+Installing bindex 0.8.1 with native extensions
+Installing rubyzip 2.3.2
+Using activesupport 7.0.6
+Using loofah 2.21.3
+Fetching xpath 3.2.0
+Installing reline 0.3.6
+Using net-protocol 0.2.1
+Fetching selenium-webdriver 4.10.0
+Installing msgpack 1.7.1 with native extensions
+Installing public_suffix 5.0.3
+Using rails-dom-testing 2.1.1
+Using globalid 1.1.0
+Using activemodel 7.0.6
+Using rails-html-sanitizer 1.6.0
+Fetching net-imap 0.3.6
+Using net-pop 0.1.2
+Using net-smtp 0.3.3
+Fetching irb 1.7.2
+Installing sqlite3 1.6.3 (x86_64-linux)
+Fetching addressable 2.8.4
+Using activejob 7.0.6
+Using actionview 7.0.6
+Using activerecord 7.0.6
+Fetching bootsnap 1.16.0
+Installing xpath 3.2.0
+Using actionpack 7.0.6
+Fetching jbuilder 2.11.5
+Installing sprockets 4.2.0
+Using actioncable 7.0.6
+Using activestorage 7.0.6
+Using railties 7.0.6
+Fetching sprockets-rails 3.4.2
+Installing puma 5.6.6 with native extensions
+Installing net-imap 0.3.6
+Using actiontext 7.0.6
+Fetching importmap-rails 1.2.1
+Installing irb 1.7.2
+Fetching stimulus-rails 1.2.1
+Installing selenium-webdriver 4.10.0
+Fetching turbo-rails 1.4.0
+Installing addressable 2.8.4
+Fetching web-console 4.2.0
+Installing bootsnap 1.16.0 with native extensions
+Using mail 2.8.1
+Fetching debug 1.8.0
+Installing jbuilder 2.11.5
+Fetching webdrivers 5.2.0
+Installing sprockets-rails 3.4.2
+Fetching capybara 3.39.2
+Using actionmailbox 7.0.6
+Using actionmailer 7.0.6
+Using rails 7.0.6
+Installing importmap-rails 1.2.1
+Installing stimulus-rails 1.2.1
+Installing turbo-rails 1.4.0
+Installing web-console 4.2.0
+Installing debug 1.8.0 with native extensions
+Installing webdrivers 5.2.0
+Installing capybara 3.39.2
+Bundle complete! 15 Gemfile dependencies, 72 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from rubyzip:
+RubyZip 3.0 is coming!
+**********************
+
+The public API of some Rubyzip classes has been modernized to use named
+parameters for optional arguments. Please check your usage of the
+following classes:
+  * `Zip::File`
+  * `Zip::Entry`
+  * `Zip::InputStream`
+  * `Zip::OutputStream`
+
+Please ensure that your Gemfiles and .gemspecs are suitably restrictive
+to avoid an unexpected breakage when 3.0 is released (e.g. ~> 2.3.0).
+See https://github.com/rubyzip/rubyzip for details. The Changelog also
+lists other enhancements and bugfixes that have been implemented since
+version 2.3.0.
